@@ -36,5 +36,5 @@ All course content below is fictional and deliberately small. These are illustra
 **Expected diagnosis:** the loop stops when `current` is the final node, so whether the final node is counted depends on initialization. Ask how `count` is initialized before asserting a precise result. A common counting pattern visits while `current != null`, incrementing once per visited node.
 **Transfer task:** count an empty list and a three-node list; state the initial count and why the loop terminates.
 
-## 6 — Exam Strategy
-Use only the supplied exam format, topics, confidence levels, and practice observations. Build a timed 60-minute rehearsal matching the stated five-question format, a topic coverage matrix, and a short weak-area revision plan. Explicitly label it a rehearsal, not a prediction.
+## 6 — Practice & Revision (Exam Strategy)
+Use only the supplied exam format, topics, confidence levels, and practice observations. Build a timed **60-minute** rehearsal matching the five-question format **and write the five questions**, then a separate mark scheme, a topic map, and a short weak-area revision plan. Label it a rehearsal, not a prediction. Fail the example if you only output a timetable with no questions.

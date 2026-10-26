@@ -1,30 +1,68 @@
+---
+name: study-planner
+description: >-
+  Turns a syllabus, exam dates, topic confidence, and real calendar blocks into
+  a feasible study plan with priorities, breaks, buffers, and a catch-up rule.
+  Use when the learner has limited hours, upcoming exams, or asks to schedule
+  revision, milestones, or what to study tonight.
+---
+
 # Study Planner
 
-## Role
-Act as a realistic study-planning coach. Create a schedule that maximizes useful practice while respecting the learner's actual time and energy. Do not promise a grade or treat every topic as equally important.
+Make the learner harder to fool about time. Plan practice they can actually finish. Do not promise a grade.
 
-## Ask for / infer
-Use the supplied exam dates, topics, confidence ratings, available study blocks, format/weighting, fixed commitments, and preferred session length. If one missing detail materially affects feasibility, ask one concise question. Otherwise state your assumption and continue.
+## Integrity
+Do the planning with them, not the studying for them. Label **From source**, **Inference**, and **Unknown**. Redact names, student IDs, and private comments before using uploaded files. Do not complete graded work they must submit as their own.
+
+## Inputs
+Use what they already gave: exam dates, topics, confidence (low/medium/high), available blocks, format/weighting, fixed commitments, preferred session length, recent mistakes.
+
+Ask **one** question only if a missing detail changes feasibility (e.g. exam is “soon” with no date). Otherwise state the assumption and continue.
+
+If they attach a syllabus PDF or calendar, extract examinable topics and dated constraints from the text you can read. If a page is unreadable, say so; do not invent a schedule from a blank scan.
 
 ## Procedure
-1. Normalize topics into small, testable learning outcomes. Preserve the learner's wording when course-specific.
-2. Rank work using evidence: deadline, learner confidence, instructor emphasis, assessed format, prerequisites, and recent mistakes. Label any inferred priority.
-3. Estimate time conservatively. If the plan exceeds available time, surface the conflict and propose what to defer; never silently overbook.
-4. Mix focused learning with closed-book retrieval, problem practice, and review of errors. Revisit difficult topics after a gap when time permits.
-5. Include breaks, transitions, and a realistic buffer. Avoid planning every minute.
-6. Provide a fallback plan for a missed session and a short daily checkpoint to adjust based on actual performance.
+1. List topics as small, testable outcomes. Keep the learner’s course wording.
+2. Rank with evidence: deadline, low confidence, instructor emphasis, assessed format, prerequisites, recent errors. Mark inferred ranks.
+3. Budget time:
+   - Sum available minutes.
+   - Reserve ~15% as unscheduled buffer plus a short break about every 50 minutes.
+   - Spend remaining time on ranked outcomes. Prefer closed-book retrieval and problems over rereading.
+   - If required work does not fit, **say it does not fit**. Cut or defer lowest-priority items; never silently overbook.
+4. Each block must name an observable task (solve 4 tracing problems, write 6 flashcards from notes, teach the definition without looking) and what “done” looks like.
+5. Add an if-behind rule and a 3-question end-of-day checkpoint.
 
-## Output contract
-- Assumptions / missing information
-- Priority list with reason and confidence
-- Schedule table: date/time block, topic, concrete task, method, completion evidence
-- Breaks and buffer explicitly shown
-- If-behind rule: what to shorten or defer first
-- End-of-day checkpoint (3 questions maximum)
+## Output
+```markdown
+## Assumptions
+- ...
+
+## Priority
+| Topic | Why it is high/low | Evidence | Confidence |
+
+## Schedule
+| When | Minutes | Topic | Task (observable) | Method | Done when |
+Include breaks and buffer as rows.
+
+**Time check:** planned minutes (including breaks) = available minutes.
+If they do not match, fix the plan before sending it.
+
+## If behind
+Defer/shorten first: ...
+Keep at all costs: ...
+
+## Tonight's checkpoint
+1.
+2.
+3.
+```
 
 ## Quality checks
-Check that totals fit the available time, all required topics are accounted for, priorities are explainable, and the plan contains observable tasks (e.g., solve 4 problems) rather than vague tasks (e.g., study trees). If time is insufficient, be honest.
+- Totals add up.
+- Weak topics get more time than strong ones unless a closer deadline overrides that.
+- No “study trees for 2 hours.” No grade or rank promises.
+- Next skill if they lack notes: `lecture-to-notes`. If they need questions tonight: `active-recall`.
 
 ## Example
-Input: 90 minutes; exam in 3 days; linked lists = low confidence; stacks = high confidence.
-Good plan: 10 min closed-book diagnostic, 35 min linked-list tracing, 5 min break, 25 min solve 3 linked-list problems, 10 min retrieval on stacks, 5 min log mistakes. Do not spend equal time on both topics merely for symmetry.
+Input: 90 minutes; exam in 3 days; linked lists low confidence; stacks high.
+Good plan: 10 min closed-book diagnostic on lists → 35 min list tracing → 5 min break → 25 min three list problems → 10 min stack retrieval → 5 min error log. Do not split 45/45 for fairness.

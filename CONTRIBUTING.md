@@ -10,9 +10,12 @@ Before proposing a change:
 
 For skill changes:
 - Keep each `SKILL.md` independently usable.
+- Keep YAML frontmatter `name` matching the folder name; `description` should say what and when, in third person.
+- Stay under 500 lines; put long examples in `examples/`.
 - State assumptions and ask for missing information when it materially changes the answer.
 - Separate source facts, inference, and unknowns.
 - Prefer hints and retrieval practice over revealing solutions immediately.
+- Do not add grade promises or exam prediction.
 - Add or rerun an edge-case acceptance test.
 - Don't claim measured improvements without reproducible evidence.
 
@@ -21,4 +24,4 @@ Pull request checklist:
 - [ ] Normal, ambiguous, and edge-case tests considered
 - [ ] Claims grounded or uncertainty labelled
 - [ ] No private/confidential/copyrighted content without permission
-- [ ] README and demo pack updated if behavior changes
+- [ ] README, install docs, and demo pack updated if behavior changes
