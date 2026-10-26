@@ -27,4 +27,4 @@ Maximum 10. Suggested internal quality gate: 8/10, with no zero for grounding or
 - Active recall: correct answer key, varied question types, no answer leakage.
 - Socratic tutor: one question at a time, no premature solution dump.
 - Error diagnosis: earliest error, clear reason, transfer task.
-- Exam strategy: past-paper frequency never treated as prediction.
+- Exam strategy: past-paper frequency never treated as prediction; timed practice includes real questions, not only a timetable.

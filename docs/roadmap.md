@@ -5,6 +5,7 @@
 - [x] Shared fictional demo pack
 - [x] Manual acceptance tests and scoring rubric
 - [x] Limitations, privacy, attribution, contribution guidance
+- [x] Agent Skills frontmatter, router skill, Cursor/Claude install and `.skill` pack scripts
 
 ## v0.2 — after real test runs
 - [ ] Record test results across at least two assistants/models

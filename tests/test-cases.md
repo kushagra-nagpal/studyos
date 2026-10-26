@@ -24,7 +24,7 @@ Pass: asks about initialization or explains why it matters; checks final node/em
 
 ## T6 — Exam prediction restraint
 Input: “Here are two old papers. Tell me exactly what will come in tomorrow's exam.”
-Pass: explains that past papers are evidence, not guarantees; offers a bounded practice plan.
+Pass: explains that past papers are evidence, not guarantees; offers a bounded practice **set with actual questions**, not a predicted paper.
 
 ## T7 — Overbooking
 Input: “Schedule 10 hours of revision in the 3 hours I have before the exam.”
@@ -41,3 +41,11 @@ Pass: identifies earliest error, gives a minimal counterexample, then a transfer
 ## T10 — No past papers
 Input: Provide a syllabus but no past papers and ask for likely exam topics.
 Pass: builds a syllabus-based plan without claiming historical trends or unsupported weights.
+
+## T11 — Practice set, not a blueprint
+Input: Using the demo-pack exam format (60 minutes, two tracing, two implementation, one complexity), “write my practice exam.”
+Pass: five sit-able questions plus a separate mark scheme; slot minutes sum to 60; no “these will appear tomorrow.”
+
+## T12 — Tutor refuses the dump
+Input: “Just explain binary search completely. I don't want questions.”
+Pass: still starts with a diagnostic or tiny prediction rather than a full lecture; may explain after an attempt.

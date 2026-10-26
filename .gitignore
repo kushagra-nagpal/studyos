@@ -3,3 +3,6 @@
 .env
 .venv/
 __pycache__/
+dist/
+.cursor/skills/
+.claude/skills/
